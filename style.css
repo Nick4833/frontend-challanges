@@ -1,0 +1,174 @@
+@font-face {
+  font-family: HankenGrotesk;
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: HankenGrotesk, sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.container {
+  gap: 1.5em;
+}
+
+.title {
+  color: hsl(241, 100%, 89%);
+}
+
+.result {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8em;
+  padding: 1.8em 1em;
+}
+
+.pointContainer {
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.point {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.total {
+  color: hsl(241, 100%, 89%);
+}
+
+.ratingContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 0 0.5em;
+}
+
+.rating {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.ratingSum {
+  color: hsl(241, 100%, 89%);
+  max-width: 280px;
+}
+
+.summary {
+  padding: 0px 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.summary > h2 {
+  color: hsl(224, 30%, 27%);
+  font-size: 1.2em;
+}
+
+.summaryRows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.iconText {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  gap: 1em;
+}
+
+.subpoint {
+  color: hsl(224, 30%, 27%);
+  font-weight: bold;
+}
+
+.subtotal {
+  color: hsla(224, 30%, 27%, 0.551);
+}
+
+.continue {
+  background-color: hsl(224, 30%, 27%);
+  padding: 1em;
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  border-radius: 2em;
+  font-size: 1em;
+  border: none;
+}
+
+@media (min-width: 320px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .result {
+    border-radius: 0 0 1.5em 1.5em;
+  }
+}
+
+@media (min-width: 700px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 50em;
+    box-shadow: 20px 40px 90px 20px rgba(0, 0, 0, 0.17);
+    border-radius: 1.5em;
+    height: 450px;
+    gap: 1em;
+  }
+
+  .summary {
+    align-self: center;
+  }
+
+  body {
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .result {
+    border-radius: 1.5em;
+    padding: 2em;
+    width: 300px;
+    gap: 2.5em;
+  }
+
+  .ratingSum {
+    width: 230px;
+  }
+
+  .summary > h2 {
+    font-size: 1.2em;
+  }
+}

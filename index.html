@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="result">
+        <p class="title">Your Result</p>
+        <div class="pointContainer">
+          <p><span class="point">76</span> <br /><small class="total">Of 100</small></p>
+        </div>
+        <div class="ratingContainer">
+          <p class="rating">Great</p>
+
+          <p class="ratingSum">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </div>
+      <div class="summary">
+        <h2>Summary</h2>
+        <div class="summaryRows">
+        <div class="summaryRow" style="background-color: hsla(0, 100%, 67%, 0.17);">
+          <div class="iconText" style="color: hsl(0, 100%, 67%);">
+            <img src="./assets/images/icon-reaction.svg" />
+            Reaction
+          </div>
+
+          <p class="subpoint">80 <span class="subtotal">/ 100</span></p>
+        </div>
+
+        <div class="summaryRow" style="background-color: hsla(39, 100%, 56%, 0.171);">
+          <div class="iconText" style="color: hsl(39, 100%, 56%);">
+            <img src="./assets/images/icon-memory.svg" />
+            Memory
+          </div>
+
+          <p class="subpoint">92 <span class="subtotal">/ 100</span></p>
+        </div>
+
+        <div class="summaryRow" style="background-color: hsla(166, 100%, 37%, 0.129);">
+          <div class="iconText" style="color: hsl(166, 100%, 37%);">
+            <img src="./assets/images/icon-verbal.svg" />
+            Verbal
+          </div>
+
+          <p class="subpoint">61 <span class="subtotal">/ 100</span></p>
+        </div>
+
+        <div class="summaryRow" style="background-color: hsla(234, 85%, 45%, 0.09);">
+          <div class="iconText" style="color: hsl(234, 85%, 45%);">
+            <img src="./assets/images/icon-visual.svg" />
+            Visual
+          </div>
+
+          <p class="subpoint">72 <span class="subtotal">/ 100</span></p>
+        </div>
+      </div>
+        <button class="continue">
+        Continue
+      </button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ank Maw Khon</a>.
+    </div>
+  </body>
+</html>
